@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Police Character Certificate - Result</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: url('page2-assets/images/body-bg.jpg') no-repeat center center fixed;
+            background-size: cover; margin: 0; padding: 0;
+            display: flex; flex-direction: column; min-height: 100vh;
+            width: 100%; overflow-x: hidden;
+        }
+        .navbar-top {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            height: 65px; padding: 0 30px; display: flex; align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            width: 100%; box-sizing: border-box;
+        }
+        .navbar-top img { height: 50px; }
+        .cert-sheet {
+            background-color: #fff;
+            background-image: url('page2-assets/images/watermark.png');
+            background-repeat: no-repeat;
+            background-position: center 100px;
+            background-size: 420px;
+            width: 95%; max-width: 1300px;
+            margin: 20px auto 40px auto;
+            padding: 40px 50px;
+            border: 1px solid #ccc; position: relative;
+            min-height: 1000px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            display: flex; flex-direction: column; z-index: 1;
+        }
+        
+        /* Header Container for proper alignment */
+        .top-header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .logo-on-sheet { width: 120px; }
+        .photo-area { width: 190px; text-align: right; }
+        .photo-area img { width: 150px; height: 180px; object-fit: cover; border: 1px solid #000; display: block; margin-left: auto; margin-bottom: 8px; }
+        
+        .header-title { 
+            flex-grow: 1;
+            text-align: center; 
+            padding: 0 10px;
+        }
+        .header-title h1 { font-size: 28px; margin: 0; font-weight: normal; line-height: 1.4; }
+        .header-title h2 { font-size: 24px; margin: 5px 0; font-weight: normal; }
+        .header-title h3 { font-size: 22px; margin: 5px 0; font-weight: normal; }
+
+        .date-text { font-size: 12px; font-weight: bold; color: #333; white-space: nowrap; }
+
+        .main-content-area { position: relative; z-index: 2; flex-grow: 1; }
+        table { width: 100%; border-collapse: collapse; margin-top: 0px; background-color: transparent !important; }
+        td, th { border: 0.5px solid #000; padding: 10px; font-size: 14px; text-align: left; background-color: transparent !important; }
+        .gray-label { background-color: rgba(252, 252, 252, 0.6) !important; width: 22%; }
+        .pkm-no { font-weight: bold; font-size: 15px; margin-bottom: 12px; }
+        .section-break-header { text-align: center; font-weight: bold; padding: 12px; border: 1px solid #000; border-bottom: none; font-size: 18px; text-transform: uppercase; margin-top: 20px; }
+        
+        .stay-table th { text-align: center; font-size: 18px; font-weight: bold; vertical-align: middle; }
+        .stay-table td { text-align: center; font-size: 16px; font-weight: bold; padding: 25px 10px; }
+        .record-note { font-size: 15px; font-weight: bold; margin: 30px 0 10px 0; }
+        .final-disclaimer { font-size: 14px; margin-top: 40px; line-height: 1.7; text-align: justify; margin-bottom: 20px; }
+        .footer-blur { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #333; text-align: center; padding: 15px 0; width: 100%; font-size: 14px; border-top: 1px solid rgba(255, 255, 255, 0.3); margin-top: auto; box-sizing: border-box; }
+
+        /* Mobile View Fix */
+        @media screen and (max-width: 768px) {
+            .cert-sheet { padding: 15px; width: 95%; margin: 10px auto; min-height: auto; }
+            .logo-on-sheet { width: 60px; } /* Mobile par logo chota */
+            .photo-area { width: 80px; } /* Mobile par photo choti */
+            .photo-area img { width: 70px; height: 90px; }
+            .header-title h1 { font-size: 14px; }
+            .header-title h2 { font-size: 12px; }
+            .header-title h3 { font-size: 11px; }
+            .date-text { font-size: 8px; }
+            .pkm-no { font-size: 12px; }
+            td, th { padding: 5px; font-size: 11px; }
+            .section-break-header { font-size: 14px; padding: 8px; }
+            .stay-table th, .stay-table td { font-size: 10px; padding: 10px 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-top">
+        <img src="page2-assets/images/logo-top.png">
+    </div>
+
+    <div class="cert-sheet">
+        <div class="top-header-wrapper">
+            <img src="page2-assets/images/logo-sheet.png" class="logo-on-sheet">
+            
+            <div class="header-title">
+                <h1>General Police Verification</h1>
+                <h2>Police Khidmat Markaz</h2>
+                <h3>The District Police Officer, Rahim Yar Khan</h3>
+            </div>
+
+            <div class="photo-area">
+                <img src="page2-assets/images/pp.jpg">
+                <div class="date-text">Dated: 11/11/2026 14:50:58 PM</div>
+            </div>
+        </div>
+
+        <div class="main-content-area">
+            <div class="pkm-no">PKM No: RYK-17396672</div>
+            <table>
+                <tr><td class="gray-label">Name</td><td><strong>IMRAN SHABBIR</strong></td></tr>
+                <tr><td class="gray-label">Son of</td><td>MUHAMMAD SHABBIR</td></tr>
+                <tr><td class="gray-label">CNIC</td><td>31302-5580421-7</td></tr>
+                <tr><td class="gray-label">Contact No</td><td>0325-3511115</td></tr>
+                <tr><td class="gray-label">Courier Address</td><td>PO KHAS LIAQUAT PUR.MOHALA HAKEEMA BAD LQP RYK 0325-3511115</td></tr>
+                <tr><td class="gray-label">Purpose</td><td>General Police Verification</td></tr>
+            </table>
+
+            <table style="margin-top: 2px;">
+                <tr>
+                    <td class="gray-label">Form Submit Date</td><td>11/11/2026 12:21:10 PM</td>
+                    <td class="gray-label">Date of Birth</td><td>02/01/1997</td>
+                </tr>
+            </table>
+
+            <div class="section-break-header">PLACE & PERIOD OF STAY</div>
+            <table class="stay-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" style="width: 45%;">Address</th>
+                        <th rowspan="2" style="width: 25%;">Police Station</th>
+                        <th colspan="2">Stay Period</th>
+                    </tr>
+                    <tr style="font-size: 15px;">
+                        <th>From</th>
+                        <th>To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: left;">Permanent:PO KHAS LIAQUAT PUR.MOHALA HAKEEMA BAD LQP RYK 0325-3511115</td>
+                        <td>City Liaqatpur</td>
+                        <td>Since Birth</td>
+                        <td>To Date</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="record-note">As per available record of Police Station(s), the applicant has:</div>
+                • NO Record Found till date <br>
+                • NO Criminal Record Found till date
+            </div>
+
+            <div class="final-disclaimer">
+                This Employee Certificate document is genuine and issued to<strong>"IMRAN SHABBIR"</strong>S/O<strong>"MUHAMMAD SHABBIR"</strong>by Punjab Police, Pakistan. It will expire on<strong>"09/05/2027"</strong>.This is electronic verification of the document cannot be challenged in The Court of Law. For detailed verification of the certificate please contact relevant district's Police Khidmat Markaz Incharge.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-blur">
+        © Copyright 2026 PITB
+    </div>
+</body>
+</html>
